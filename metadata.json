@@ -1,0 +1,6 @@
+{
+  "name": "Lumina",
+  "description": "A minimalist research and reading companion that helps you systematize knowledge as a second brain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI-powered summarization", "Structured note-taking", "Visual knowledge mapping"]
+}
