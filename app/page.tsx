@@ -298,7 +298,12 @@ export default function Home() {
                             >
                                 <div className="max-w-4xl mx-auto w-full">
                                     <div className="mb-12 text-center relative group">
-                                        <h1 className="text-4xl font-serif text-[#33302E] tracking-tight mb-2 uppercase">{activeProject.title}</h1>
+                                        <input 
+                                          className="text-4xl font-serif text-[#33302E] tracking-tight mb-2 uppercase bg-transparent border-none outline-none text-center w-full focus:border-b focus:border-[#E8E4DF]"
+                                          value={activeProject.title}
+                                          onChange={(e) => handleUpdateProject({ title: e.target.value })}
+                                          placeholder="Tên sách/dự án..."
+                                        />
                                         <div className="flex items-center justify-center gap-4 text-[#8E8A85] text-xs font-serif italic">
                                           <span>{activeProject.author || "Tác giả vô danh"}</span>
                                           <span className="w-1 h-1 bg-[#E8E4DF] rounded-full" />
